@@ -1,0 +1,35 @@
+/*
+ * Created by SharpDevelop.
+ * User: Flory
+ * Date: 04/08/2016
+ * Time: 11:30 a.m.
+ * 
+ */
+ using System;
+ 
+public class Ejercicio1
+{
+    public static void Main()
+    {
+
+        string nombre1, nombre2, nombre3;
+ 
+       
+        Console.WriteLine("ESCRIBE EL PRIMER NUMERO");
+        nombre1 = Console.ReadLine(); 
+		
+		Console.WriteLine("ESCRIBE EL SEGUNDO NUMERO");
+        nombre2 = Console.ReadLine();   
+				 
+		Console.WriteLine("ESCRIBE EL TERCER NUMERO");
+        nombre3 = Console.ReadLine();
+ 
+        Console.WriteLine("{0} {1} {2} ",
+		nombre3, nombre2, nombre1);
+        Console.Write(" \n Presione < Intro > para continuar...");
+            
+            Console.ReadKey();
+        }
+
+    }
+    
