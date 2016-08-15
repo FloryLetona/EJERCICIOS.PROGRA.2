@@ -1,35 +1,23 @@
-/*
- * Created by SharpDevelop.
- * User: Flory
- * Date: 04/08/2016
- * Time: 11:30 a.m.
- * 
- */
- using System;
- 
-public class Ejercicio1
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace InvertirPalabra
 {
-    public static void Main()
-    {
-
-        string nombre1, nombre2, nombre3;
- 
-       
-        Console.WriteLine("ESCRIBE EL PRIMER NUMERO");
-        nombre1 = Console.ReadLine(); 
-		
-		Console.WriteLine("ESCRIBE EL SEGUNDO NUMERO");
-        nombre2 = Console.ReadLine();   
-				 
-		Console.WriteLine("ESCRIBE EL TERCER NUMERO");
-        nombre3 = Console.ReadLine();
- 
-        Console.WriteLine("{0} {1} {2} ",
-		nombre3, nombre2, nombre1);
-        Console.Write(" \n Presione < Intro > para continuar...");
-            
-            Console.ReadKey();
-        }
-
+    class Program
+    {       
+        static void Main(string[] args)
+        {           
+              String cad="";    
+   Console.WriteLine("ingresa una palabra");
+   String pal = Console.ReadLine();
+   int t = pal.Length;
+    for(int i=t-1;i>=0;i--){
+        cad=cad+pal.Substring(i, 1);
     }
-    
+    Console.WriteLine(cad);               
+           Console.ReadLine();
+        }
+    }
+}
+ 
